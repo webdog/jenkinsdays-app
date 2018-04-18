@@ -1,7 +1,5 @@
 node {
     def scmVars
-
-    stages {
         stage('Build') {
             steps {
                 echo 'Building..'
@@ -50,5 +48,4 @@ node {
                 error("Deployment Status API Update Failed: " + deployStatusResponse.status)
                 }
         }        
-    }
 }
