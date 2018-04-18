@@ -1,9 +1,7 @@
 node {
     def scmVars
         stage('Build') {
-            steps {
                 echo 'Building..'
-            }
         }
         stage('Test') {
             steps {
