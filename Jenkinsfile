@@ -2,6 +2,7 @@ node {
     def scmVars
         stage('Build') {
                 echo 'Building..'
+                scmVars = checkout scm
         }
         stage('Test') {
                 echo 'Testing..'
