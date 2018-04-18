@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    def scmVars
 
     stages {
         stage('Build') {
